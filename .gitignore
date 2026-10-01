@@ -1,15 +1,10 @@
 @"
 
-# Backups locales
-backup-*/
-client-src-backup-*/
+# Build frontend
+client/dist/
 
-# Dependencias
-node_modules/
-
-# Variables privadas
-.env
-.env.local
-client/.env
-server/.env
+# Base de datos local
+server/*.db
+server/*.db-shm
+server/*.db-wal
 "@ | Out-File -Encoding utf8 -Append .gitignore
