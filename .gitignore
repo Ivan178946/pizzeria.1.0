@@ -8,3 +8,30 @@ server/*.db
 server/*.db-shm
 server/*.db-wal
 "@ | Out-File -Encoding utf8 -Append .gitignore
+# Backups locales
+backup-*/
+client-src-backup-*/
+
+# Dependencias
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Variables privadas
+.env
+.env.local
+.env.development
+.env.production
+server/.env
+server/.env.local
+client/.env
+client/.env.local
+
+# Build frontend
+client/dist/
+dist/
+
+# Base de datos local
+server/*.db
+server/*.db-shm
+server/*.db-wal
