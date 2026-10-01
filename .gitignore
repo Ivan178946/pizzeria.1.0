@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+
+# Compilados
+client/dist/
+
+# Variables de entorno con datos privados
+.env
+server/.env
+.env.local
+*.local
+
+# Base de datos local (contiene ventas y usuarios reales)
+*.db
+*.db-shm
+*.db-wal
+
+# Respaldos locales
+backup-*/
+client-src-backup-antes-rediseno/
+
+# Varios
+*.log
+.DS_Store
+Thumbs.db

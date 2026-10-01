@@ -1,0 +1,11 @@
+**/node_modules
+client/dist
+**/.env
+!client/.env.production
+**/*.db
+**/*.db-shm
+**/*.db-wal
+backup-*
+client-src-backup-antes-rediseno
+.git
+*.log

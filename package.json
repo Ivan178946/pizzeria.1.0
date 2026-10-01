@@ -1,0 +1,21 @@
+{
+  "name": "pizzeria-kikis-pos",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n api,web -c red,yellow \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "reset:sales": "npm --prefix server run reset:sales"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "description": "Sistema POS de Pizzería KIKIS",
+  "engines": {
+    "node": ">=20.12"
+  }
+}

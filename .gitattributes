@@ -1,0 +1,10 @@
+# Saltos de línea normalizados (el Dockerfile se ejecuta en Linux)
+* text=auto
+Dockerfile text eol=lf
+*.sh text eol=lf
+
+# Binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.db binary
